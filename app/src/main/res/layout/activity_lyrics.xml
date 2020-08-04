@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.mp3player.view.LyricsActivity"
+    android:background="#222222">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_lst_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_lst_song"
+        android:layout_above="@+id/btn_ok"
+        android:layout_alignEnd="@+id/toolbar_lst_song">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_lyric"
+            android:textColor="#ffffff"
+            android:hint="Enter lyric"
+            android:textSize="25dp" />
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="OK"
+        android:id="@+id/btn_ok"
+        android:layout_toStartOf="@+id/btn_cancel"
+        android:background="@color/accent_material_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/btn_cancel"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Cancel"
+        android:id="@+id/btn_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/ScrollView01"
+        android:background="@color/accent_material_light"
+        android:layout_marginRight="10dp" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_toolbar_lyric"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:text="Lyrics"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

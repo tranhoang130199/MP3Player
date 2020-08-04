@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">#ffffff</item>
+        <item name="android:itemBackground">#ffffff</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="colorPrimary">@color/colorPrimary1</item>                       <!--Màu chính (ví dụ nền AppBar)-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark1</item>               <!--Màu nền thanh trạng thái điện thoại-->
+        <item name="android:navigationBarColor">@color/navigationBarColor1</item>   <!--Màu nền điều hướng điện thoại-->
+        <item name="android:windowBackground">@color/myWindowBackground</item>      <!--Màu nền Activity-->
+        <item name="android:textColorPrimary">@color/textColorPrimary1</item>       <!--Màu chữ trong các control như Button ... -->
+
+    </style>
+
+
+    <style name="MyPopupMenu"
+        parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">#ffffff</item>
+    </style>
+</resources>

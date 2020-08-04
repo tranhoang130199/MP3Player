@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".view.ListSongActivity"
+    android:background="#222222">
+    android:id="@+id/mainLayout"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+       <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_lst_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_search"
+        android:layout_below="@+id/toolbar_lst_song"
+        android:hint="Search"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lst_songs"
+        android:layout_below="@+id/edit_search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:divider="#cecece"
+        android:dividerHeight="1px" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_toolbar_song"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:text="List songs"
+        android:gravity="center_horizontal"
+        android:layout_alignBottom="@+id/toolbar_lst_song"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
